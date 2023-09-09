@@ -1,0 +1,1 @@
+!function(){var __webpack_modules__={"./src/js/main.js":function(){eval('\n// const sum = require("./module/sum")\n// console.log(sum(200, 29));\n// console.log(sum(220, 220));\n\n\n//# sourceURL=webpack://gulp-starter/./src/js/main.js?')}},__webpack_exports__={};__webpack_modules__["./src/js/main.js"]()}();
