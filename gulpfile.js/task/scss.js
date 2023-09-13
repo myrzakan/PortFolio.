@@ -9,6 +9,7 @@ const scss = () => {
         message: error.message
       }))
     }))
+    .pipe($.gp.sassGlob())
     .pipe($.sass())
     .pipe($.gp.webpCss())
     .pipe($.gp.autoprefixer())
