@@ -40,7 +40,7 @@
 1. Склонируйте репозиторий на свой локальный компьютер:
 
    ```bash
-   git clone https://github.com/your-username/custom-gulp-builder.git
+   git clone git@github.com:myrzakan/Gulp.git
 
 2. Перейдите в директорию проекта:
    ``````bash 
