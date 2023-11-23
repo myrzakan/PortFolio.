@@ -1,0 +1,235 @@
+// Skill
+
+/* skill left */
+
+.skill-bar {
+  span {
+    color: var(--main-color);
+  }
+}
+
+.skills {
+  background-color: var(--second-bg-color);
+  padding-top: 165px;
+}
+
+.skill-main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 50px;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+}
+
+.skill-main {
+
+  h3 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+}
+
+.skill-bar {
+  margin-bottom: 7.3rem;
+}
+
+.skill-left .skill-bar .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+  width: 100%;
+  height: 10px;
+  background-color: var(--bg-color);
+  border-radius: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.skill-bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: var(--main-color);
+  border-radius: 25px;
+  box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html {
+  width: 80%;
+  animation: html 2s;
+}
+
+.skill-bar .bar .figma {
+  width: 70%;
+  animation: figma 3s;
+}
+
+.skill-bar .bar .javaScript {
+  width: 80%;
+  animation: javaScript 4s;
+}
+
+.skill-bar .bar .css {
+  width: 85%;
+  animation: css 5s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes figma {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes javaScript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+/* skill rigth */
+
+.professional {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box {
+  position: relative;
+  margin: 40px 0;
+  flex: 1 1 15rem;
+}
+
+.box .text {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+big {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-46%, -10%);
+}
+
+small {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-49%, 282%);
+}
+
+.circle {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle .points {
+  width: 5px;
+  height: 10px;
+  background-color: var(--bg-color);
+  position: absolute;
+  border-radius: 3px;
+  transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.points.marked {
+  animation: glow 0.04s linear forwards;
+  animation-delay: calc(var(--i) * 0.05s);
+}
+
+@keyframes glow {
+  0% {
+    background-color: var(--bg-color);
+    box-shadow: none;
+  }
+  100% {
+    background: var(--main-color);
+    box-shadow: var(--neon-box-shadow);
+  }
+}
+
+
+// Media
+
+@media (max-width: 1000px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 40px;
+  }
+
+  big {
+    transform: translate(-44%, -33%);
+  }
+
+  small {
+    left: 55%;
+    transform: translate(-57%,251%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .skill-main {
+    grid-template-columns: 1fr;
+  }
+
+  small {
+    transform: translate(-65%,251%);
+  }
+}
+
+@media (max-width: 400px) {
+  small {
+    transform: translate(-60%,251%);
+  }
+}
